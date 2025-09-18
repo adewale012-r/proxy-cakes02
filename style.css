@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topbar {
+    width: 100%;
+    background-color: #000;
+}
+.topbar .element {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 20px 0px;
+}
+.topbar .element .icon ul {
+    display: flex;
+    list-style: none;
+}
+.topbar .element .icon ul li {
+    margin-right: 10px;
+}
+.topbar .element .icon ul li a i{
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.topbar .element .icon ul li a i:hover {
+    color: #e5bf4a;
+    transform: rotateY(180deg);
+}
+.topbar .element .call a {
+    border: 1px solid #e5bf4a;
+    color: #e5bf4a;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+.topbar .element .call a:hover {
+    background-color: #e5bf4a;
+    color: #fff;
+}
+.nav {
+    background-color: #000;
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    margin-top: auto;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.nav ul li {
+    margin-right: 20px;
+}
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #e5bf4a;
+    margin-top: 30px;
+    transition: .5s ease-in-out;
+}
+.nav ul li a:hover {
+    color: #e5bf4a;
+}
+.nav ul li a:hover::before {
+    width: 100%;
+}
+.nav .element {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: #E5BF4A; */
+}
+.nav .menu {
+    margin-right: 30px;
+    margin-top: -10px;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.nav .menu span {
+    color: #fff;
+    background-color: #000000c5;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav .element .drop {
+    padding: 20px;
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+.nav .element .drop li a {
+    color: #000;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.nav .blog:hover~.drop {
+    display: block !important;
+}
+
+/* background section */
+.background {
+    background: url(../Images/h1_hero1.jpg.webp);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.background .text {
+    margin-left: 100px;
+    margin-top: 120px;
+    position: absolute;
+    height: inherit;
+}
+.background .text h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    
+}
+.background .text a {
+    background-color: #e5bf4a;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+.background .text a:hover {
+    border: 1px solid #e5bf4a;
+    background-color: #000;
+    color: #e5bf4a;
+}
+/* about section */
+.about {
+    background-color: #000;
+    width: 100%;
+    padding: 80px 0px;
+}
+.about .hd {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.about .hd h3{
+    color: #dfdfdf;
+    /* font-family: "Poiret One", cursive; */
+    font-weight: 100;
+    font-size: 40px;
+}
+.about .hd::after {
+    content: "";
+    position: absolute;
+    background-color: #e5bf4a;
+    width: 100px;
+    height: 2px;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+.about .element {
+    margin: 0px 100px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.about .responsive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem,2fr));
+
+}
+.about .element .txt {
+    color: #dfdfdf;
+    width: 95%;
+}
+.about .element .txt h2{
+    color: #E5BF4A;
+    font-size: 24px;
+    padding-left: 0px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+.about .element .txt p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.about .element .pics {
+    width: 100%;
+    box-sizing: border-box;
+}
+.about .element .pics img {
+    width: inherit;
+    height: inherit;
+}
+.cake {
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0px;
+}
+.cake .element {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,3fr));
+    margin: auto;
+}
+.cake a {
+    text-decoration: none;
+}
+.cake .card {
+    width: 400px;
+    height: 500px;
+    padding: 0px ;
+}
+.cake .card .imag {
+    width: 400px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+.cake .card .imag img {
+    width: inherit;
+    height: inherit;
+    transition: .3s ease-in;
+}
+.cake .card .imag .add {
+    width: 100%;
+    background-color: #e5bf4a;
+    text-align: center;
+    height: 0px;
+    position: absolute;
+    align-content: center;
+    text-transform: capitalize;
+    color: #000;
+    bottom: 0;
+    visibility: hidden;
+    transition: .3s ease-in;
+    transform: translateY(100%);
+}
+.cake .card .tt {
+    margin-top: 20px;
+    color: #fff;
+}
+.cake .card .tt p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.cake .card .tt span {
+    color: #e5bf4a;
+}
+.cake .card:hover .add {
+    height: 40px;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+.cake .element .card:hover img {
+    transform: scale(1.1);
+}
+
+.vid {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+ 
+.vid .element {
+    display: flex;
+    justify-content: center;
+
+}
+
+.vid .element .vd {
+    width: 80%;
+    background: url(../Images/video-bg.jpg.webp);
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid .element .vd::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #E5BF4A;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.vid .element .vd::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #000;
+    position: absolute;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.vid .element .vd:hover::after {
+    transform: scale(1.1);
+
+}
+
+.fd {
+    width: 100%;
+    background-color: #e9acac;
+    padding: 50px 0px;
+    color: #fff;
+}
+.fd .hd {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.fd .hd h2{
+    text-transform: capitalize;
+    font-weight: 100;
+    font-family: cursive;
+    color: #000;
+    margin: 0 auto;
+    display: block;
+}
+.fd .element{
+    width: 80%;
+    margin: auto;
+
+}
+.fd .element .responsive{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.fd .element .card{
+    padding: 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.fd .element .card .icon {
+    display: flex;
+}
+.fd .element .card .icon i {
+    color: #e5bf4a;
+    margin-right: 5px;
+}
+.fd .element .card .prof {
+    margin-top: 30px;
+    align-items: center;
+
+}
+.fd .element .card .prof img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.fd .element .sec{
+    position: relative;
+}
+
+.fd .element .sec::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .topbar .element .call {
+        display: none;
+    }
+    .nav {
+        background-color: #4C4C4C;
+    }
+    .nav .element {
+        display: block;
+    }
+    .nav .element .menu {
+        display: block;
+        top: 21px;
+    }
+    .nav .element ul {
+        display: none;
+    }
+    .nav .element ul .show {
+        display: block;
+    }
+    .cake .element .card {
+        display: block;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width:600px) {
+
+    .topbar .element .icon {
+        display: none;
+    }
+    .topbar .element .logo {
+        display: flex;
+        align-items: center;
+    }
+    .about .element {
+        margin: 0px 30px;
+    }
+    
+}
